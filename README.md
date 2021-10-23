@@ -1,6 +1,6 @@
 # Git tic-tac-toe
 
-📚🎓 Learn to use GitHub pull requests and solve merge conflicts 😐 by playing [tic-tac-toe ❎🅾️❎](https://en.wikipedia.org/wiki/Tic-tac-toe) via git [pull requests](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+📚🎓 Learn to use GitHub **pull requests** and solve **merge conflicts** 😐 by playing [tic-tac-toe ❎🅾️❎](https://en.wikipedia.org/wiki/Tic-tac-toe) via git [pull requests](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 ## Game board
 
@@ -28,8 +28,8 @@ _____|_____|_____
 
 ### First turn
 
-1. Team X begins: Player 1 of team X creates a new branch (e.g. `git branch move-01`).
-2. Player 1 sets an `X` somewhere, e.g. it changes `game-board.txt` to the following:
+1. Team X begins: Players of team X each create a new local branch (e.g. `git branch move-01`).
+2. Players of Team X set an `X` somewhere, e.g. it changes `game-board.txt` to the following for player 1:
 
   ```
        |     |
@@ -43,15 +43,15 @@ _____|_____|_____
        |     |
   ```
 
-3. Player 1 commits the change locally (e.g. `git commit "Ingenious move"`)
-4. Player 1 pushes the new branch to the remote repository (`git push`) - git might ask you to first create the remote branch - the prompt will contain instructions to do so.
-5. Inside GitHub Player 1 opens a pull request (a.k.a. **PR**) ("New pull request") from the newly created branch onto `main`.
-6. Player 1 adds all other players (including the opponents) as reviewers to the **PR**.
-7. If all reviewers approve the PR, player 1 merges the PR.
+3. Players of Team X commit their changes locally (e.g. `git commit "Ingenious move"`)
+4. Players of Team X push the new branch to the remote repository (`git push`) - git might ask you to first create the remote branch - the prompt will contain instructions to do so.
+5. Inside GitHub players of Team X open a pull request (a.k.a. **PR**) ("New pull request") from the newly created branch onto `main`.
+6. Each player adds all other players (including players of Team O) as reviewers to the **PR**.
+7. If all reviewers approve the PR, player merges the PR.
 
-  - This step might not work right away. In case of merge conflicts, player 1 has to pull
+  - This step might not work right away. In case of **merge conflicts**, players have to discuss in comments of PR and solve merge conflicts.
 
 ### Other turns
 
-- The game continues. Its Team O's turn. A player of Team 0 follows all the steps above (just uses `O` as a symbol).
-- Teams take turns in this manner until we have a winner or a draw.
+- The game continues. Its Team O's turn. All players of Team 0 follow the steps above (just uses `O` as a symbol).
+- Teams take turns in this manner until we have a winner or end in a draw.
